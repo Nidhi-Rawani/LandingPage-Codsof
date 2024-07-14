@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      body {  
+        background-image: linear-gradient(to right,rgb(174, 226, 217), rgb(133, 238, 42),rgb(176, 171, 243));      
+    }
+    .flex {
+        display: flex;
+      }
+      .container {
+        width: 1200px;
+        height: 75vh;
+        margin:0 auto;
+        padding: 32px 64px;
+        margin-top:84px;
+       
+        border: solid 3px #dedeaa;
+      }
+      .page{
+        flex-direction: column;
+      }
+      .header{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 64px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .logo img{
+      cursor: pointer;
+      border: 2px solid black;
+      border-radius: 5px;
+      box-sizing: 5px 5px 60px black;
+    }
+      .unli{
+          align-items: center;
+          justify-content: space-around;
+          gap:38px;
+          list-style: none;
+          color:#333;
+          cursor: pointer;
+          
+        }
+    .unli li{
+        border:2px solid rgb(45, 43, 43);
+        border-radius: 5px;
+    }
+
+        .unli li:hover{
+            color:#000;
+            text-shadow:0.5px 0.5px 0.5px #333;
+        }
+        .signUp{
+            color:#333;
+            cursor: pointer;
+            
+        }
+        .signUp:hover{
+            color:#000;
+            text-shadow:0.5px 0.5px 0.5px #333;
+        }
+    .text-page{
+
+        gap:44px;
+        padding: 32px; 
+    }
+    .text-page-text{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:12px;
+        gap:32px;
+    }
+    h1{
+        font-size: 64px;
+        background-image: linear-gradient(to right,rgb(88, 88, 86), rgb(31, 31, 25),rgb(4, 4, 1));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    h3{
+        font-size:32px;
+    }
+    span{
+        background-image: linear-gradient(to right, rgb(74, 28, 211),rgb(227, 64, 211));
+        font-size:44px;
+        padding:0 12px;
+        display: inline-block;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transform: skewX(-20deg);
+        
+    }
+    .knowMore{
+        font-size:18px;
+        text-transform: uppercase;
+        padding-top:16px;
+        cursor: pointer;
+    }
+   
+      .yoga-img img{
+        transform: perspective(10px) translateZ(-1px) scale(1);
+        border:3px solid rgb(100, 60, 60);
+        box-shadow: 2px 2px 60px black;
+        width:560px; 
+        height:580px;
+        border-radius:40px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="container flex">
+      <div class="page flex">
+      <div class="header flex">
+        <div class="logo">
+          <img src="https://as1.ftcdn.net/v2/jpg/08/05/90/74/1000_F_805907407_on2doTVoSmhSq12ik6nEUUroSQ6tzwDq.jpg" width="180px" height="120px" />
+        </div>
+        <nav class="nav">
+          <ul class="unli flex">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </nav>
+        <div class="signUp">Sign Up</div>
+    </div>
+    <div class="text-page flex">
+        <div class="text-page-text flex">
+            <h1>Self Improvement</h1>
+            <h3> Understand your <span>motivation</span> for starting a <span>self-improvement</span>. </h3>
+            <p>
+                Personal development or self-improvement consists of activities that develop a person's capabilities and potential, build human capital, enhance quality of life, and facilitate the realization of dreams and aspirations.
+            </p>
+            <div class="knowMore">Know More &rarr;</div>
+        </div>
+        <div class="yoga-img">
+          <img src="https://traqq.com/blog/wp-content/uploads/2020/10/shutterstock_461317267_edited-1-1536x1024.jpg" />
+           
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
